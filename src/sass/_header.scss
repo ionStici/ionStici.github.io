@@ -1,84 +1,62 @@
-// <header class="header">
-// <div class="top-side"></div>
-// <div class="profile">
-//   <div class="picture"></div>
-//   <div class="details">
-//     <p class="my-name">Ion STICI</p>
-//     <p class="description">Frontend Developer</p>
-//   </div>
-// </div>
-// <div class="bottom-side"></div>
-// </header>
+.header {
+    width: 100%;
+    height: 30rem;
 
-// .header {
-//   width: 100%;
-//   height: 30rem;
-// }
+    &__top-side {
+        height: 15rem;
+        background-color: #333;
+    }
 
-// .nav {
-//   width: 100%;
-//   height: 5rem;
-//   background-color: #fff;
-// }
+    &__bottom-side {
+        height: 15rem;
+        background-color: transparent;
+    }
 
-// .nav__grid {
-//   width: 100rem;
-//   margin: 0 auto;
-// }
+    &__profile-box {
+        max-width: 75rem;
+        margin: 0 auto;
+        position: relative;
+    }
 
-// .top-side {
-//   height: 15rem;
-//   background-color: #333;
-// }
+    &__picture {
+        position: absolute;
+        top: -9rem;
+        left: 5rem;
 
-// .bottom-side {
-//   height: 15rem;
-//   background-color: transparent;
-// }
+        width: 18rem;
+        height: 18rem;
 
-// .profile {
-//   width: 100rem;
-//   margin: 0 auto;
-//   position: relative;
-// }
+        background-image: url(../img/profile.jpg);
+        background-size: cover;
+        background-position: center;
 
-// .picture {
-//   width: 17.5rem;
-//   height: 17.5rem;
-//   border-radius: 50%;
-//   border: 0.5rem solid #fff;
-//   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-//     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 50%;
+        border: 0.5rem solid #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-//   background-image: url(./../img/profile.jpg);
-//   background-size: cover;
-//   background-position: center;
+        cursor: pointer;
+        transition: filter 0.05s;
+    }
 
-//   position: absolute;
-//   top: -8.75rem;
-//   left: 5rem;
+    &__picture:hover {
+        filter: brightness(1.05);
+    }
 
-//   cursor: pointer;
-//   transition: filter 0.05s;
-// }
+    &__details {
+        position: absolute;
+        top: 1.5rem;
+        left: 26rem;
+    }
 
-// .picture:hover {
-//   filter: brightness(1.05);
-// }
+    &__name {
+        font-size: 2.8rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
 
-// .details {
-//   position: absolute;
-//   top: 1rem;
-//   left: 25rem;
-// }
-
-// .my-name {
-//   font-size: 2.8rem;
-//   font-weight: 500;
-//   margin-bottom: 0.5rem;
-// }
-
-// .description {
-//   font-size: 1.6rem;
-//   font-weight: 300;
-// }
+    &__about {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
