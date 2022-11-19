@@ -13,7 +13,7 @@
     }
 
     &__profile-box {
-        max-width: 75rem;
+        max-width: 100rem;
         margin: 0 auto;
         position: relative;
     }
@@ -50,13 +50,39 @@
     }
 
     &__name {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
         font-weight: 500;
         margin-bottom: 0.5rem;
     }
 
     &__about {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 32em) {
+    .header {
+        &__picture {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__details {
+            text-align: center;
+            left: 50%;
+            top: 12rem;
+            transform: translateX(-50%);
+
+            width: 100%;
+        }
+
+        &__name {
+            font-size: 3.5rem;
+        }
+
+        &__about {
+            font-size: 2.5rem;
+        }
     }
 }
