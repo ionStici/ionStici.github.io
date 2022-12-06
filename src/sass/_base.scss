@@ -24,24 +24,63 @@ body {
     line-height: 1;
 }
 
-.ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.header {
+    width: 100%;
+    height: 30rem;
 
-    width: 30rem;
-    margin: 0 auto;
+    &__top-side {
+        height: 15rem;
+        background-color: #333;
+    }
 
-    text-align: center;
-    margin-top: 10rem;
+    &__bottom-side {
+        height: 15rem;
+        background-color: transparent;
+    }
 
-    display: none;
+    &__profile-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -8.5rem;
+    }
 
-    a,
-    a:link,
-    a:visited {
-        text-decoration: none;
-        color: #1c7ed6;
-        font-size: 2.8rem;
+    &__picture {
+        width: 18rem;
+        height: 18rem;
+        margin-bottom: 3rem;
+
+        background-image: url(../img/profile.jpg);
+        background-size: cover;
+        background-position: center;
+
+        border-radius: 50%;
+        border: 0.5rem solid #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        cursor: pointer;
+        transition: filter 0.05s;
+    }
+
+    &__picture:hover {
+        filter: brightness(1.05);
+    }
+
+    &__details {
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    &__about {
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
     }
 }
